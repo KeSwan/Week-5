@@ -11,10 +11,17 @@ package lab5se;
  */
 public class ShopOrder extends Order {
 
-     @Override
-    void performPayment() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    @Override
+    public void performPayment() {
+        super.performPayment(); 
     }
+
+    @Override
+    public void setPaymentBehaviour(PaymentBehaviour payB) {
+        super.setPaymentBehaviour(payB); 
+    }
+
+    
 
     @Override
     public String toString() {

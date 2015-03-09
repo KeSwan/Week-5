@@ -22,6 +22,10 @@ public class Main {
         Order eCommerce = new OnlineOrder();
         System.out.println("\n" + eCommerce.toString() );
         eCommerce.performPayment();
+        
+        System.out.println("\n" + eCommerce.toString());
+        eCommerce.setPaymentBehaviour(new CreditCardPayment());
+        
     }
     
 }

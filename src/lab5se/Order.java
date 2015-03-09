@@ -9,10 +9,15 @@ package lab5se;
  *
  * @author 1301147
  */
-public abstract class Order {
+public class Order {
     
     PaymentBehaviour pb;
     
-   abstract void performPayment();
+   public void performPayment(){
+       System.out.println("Payment Performed!");
+   }
     
+   public void setPaymentBehaviour(PaymentBehaviour payB){
+       pb = payB;
+   }
 }
